@@ -1,0 +1,374 @@
+// OPENED: Sun May 12 18:44:57 IST 2019
+// RESULT: /var/folders/w3/q6tg9hdn019d3pzd0p1j1j41hfwv9x/T/groovysh-435131788800197154.txt
+message.reverse()
+// RESULT: gninrom doog
+message
+// RESULT: good morning
+message
+// RESULT: good morning
+message.size()
+// RESULT: 12
+message.find('good')
+// RESULT: good
+message.find('bad')
+// RESULT: null
+message.find('morning')
+// RESULT: morning
+message.count('good')
+// RESULT: 1
+message.count('bad')
+// RESULT: 0
+def greeting = 'Hello to all. Have u finished with Hello world'
+// RESULT: Hello to all. Have u finished with Hello world
+greeting.count('Hello')
+// RESULT: 2
+greeting.count('all')
+// RESULT: 1
+def fullname = 
+'            mehul chopra                            '
+// RESULT:             mehul chopra                            
+fullname.trim()
+// RESULT: mehul chopra
+fullname
+// RESULT:             mehul chopra                            
+message
+// RESULT: good morning
+message.startsWith('good')
+// RESULT: true
+message.startsWith('bad')
+// RESULT: false
+message.endsWith('morning')
+// RESULT: true
+def wrongmessage = 'bad morning'
+// RESULT: bad morning
+wrongmessage.replace('bad', 'good')
+// RESULT: good morning
+wrongmessage
+// RESULT: bad morning
+def name = ''
+// RESULT: 
+name.toBoolean()
+// RESULT: false
+name = 'mehul chopr
+'
+:clear
+def name = 'mehul chopra'
+// RESULT: mehul chopra
+name.toBoolean()
+// RESULT: false
+name
+// RESULT: mehul chopra
+name.toBoolean()
+// RESULT: false
+message
+// RESULT: good morning
+message.charAt(0)
+// RESULT: g
+message.charAt(1)
+// RESULT: o
+message[0]
+// RESULT: g
+message.getAt(0)
+// RESULT: g
+message.charAt(110
+:clear
+message.charAt(11)
+// RESULT: g
+message.charAt(10)
+// RESULT: n
+message[-1]
+// RESULT: g
+message[-2]
+// RESULT: n
+message[-3]
+// RESULT: i
+message[3]
+// RESULT: d
+message.getAt(01)
+// RESULT: o
+message.getAt(-1)
+// RESULT: g
+message
+// RESULT: good morning
+name
+// RESULT: mehul chopra
+name[-1] = 'A'
+// ERROR: groovy.lang.MissingMethodException: No signature of method: java.lang.String.putAt() is applicable for argument types: (Integer, String) values: [-1, A]
+Possible solutions: putAt(java.lang.String, java.lang.Object), getAt(java.lang.String), getAt(int), getAt(int), getAt(java.util.Collection), getAt(groovy.lang.IntRange)
+//    groovysh_evaluate.run(groovysh_evaluate:3)
+//    groovysh_evaluate$run.call(Unknown Source)
+//    groovysh_evaluate$run.call(Unknown Source)
+//    jdk.internal.reflect.GeneratedMethodAccessor77.invoke(Unknown Source)
+//    java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+//    jdk.internal.reflect.GeneratedMethodAccessor67.invoke(Unknown Source)
+//    java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+//    jdk.internal.reflect.GeneratedMethodAccessor66.invoke(Unknown Source)
+//    java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+//    java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+//    java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+//    java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+//    java_lang_Runnable$run.call(Unknown Source)
+//    java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+//    java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+//    java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+//    java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+//    java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+//    java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+name.putAt(-1, 'A')
+// ERROR: groovy.lang.MissingMethodException: No signature of method: java.lang.String.putAt() is applicable for argument types: (Integer, String) values: [-1, A]
+Possible solutions: putAt(java.lang.String, java.lang.Object), getAt(java.lang.String), getAt(int), getAt(int), getAt(java.util.Collection), getAt(groovy.lang.IntRange)
+//    groovysh_evaluate.run(groovysh_evaluate:3)
+//    groovysh_evaluate$run.call(Unknown Source)
+//    groovysh_evaluate$run.call(Unknown Source)
+//    jdk.internal.reflect.GeneratedMethodAccessor77.invoke(Unknown Source)
+//    java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+//    jdk.internal.reflect.GeneratedMethodAccessor67.invoke(Unknown Source)
+//    java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+//    jdk.internal.reflect.GeneratedMethodAccessor66.invoke(Unknown Source)
+//    java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+//    java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+//    java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+//    java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+//    java_lang_Runnable$run.call(Unknown Source)
+//    java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+//    java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+//    java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+//    java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+//    java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+//    java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+name.putAt('a', 'A')
+// ERROR: groovy.lang.MissingPropertyException: No such property: a for class: java.lang.String
+//    groovysh_evaluate.run(groovysh_evaluate:3)
+//    groovysh_evaluate$run.call(Unknown Source)
+//    groovysh_evaluate$run.call(Unknown Source)
+//    jdk.internal.reflect.GeneratedMethodAccessor77.invoke(Unknown Source)
+//    java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+//    jdk.internal.reflect.GeneratedMethodAccessor67.invoke(Unknown Source)
+//    java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+//    jdk.internal.reflect.GeneratedMethodAccessor66.invoke(Unknown Source)
+//    java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+//    java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+//    java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+//    java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+//    java_lang_Runnable$run.call(Unknown Source)
+//    java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+//    java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+//    java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+//    java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+//    java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+//    java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+name[-1]
+// RESULT: a
+name[-4]
+// RESULT: o
+name
+// RESULT: mehul chopra
+name.substring(0, 5)
+// RESULT: mehul
+name[0..5]
+// RESULT: mehul 
+name[0..5].size()
+// RESULT: 6
+name[0..4].size()
+// RESULT: 5
+name[0..4]
+// RESULT: mehul
+name
+// RESULT: mehul chopra
+name[-3..name.size()-1]
+// RESULT: pra
+name.size()
+// RESULT: 12
+name.indexOf('mehul')
+// RESULT: 0
+name.indexOf('chopra')
+// RESULT: 6
+def l = []
+// RESULT: []
+l.class
+// RESULT: class java.util.ArrayList
+def cars = ['audi', 'mercedes', 'porshe']
+// RESULT: [audi, mercedes, porshe]
+cars.class
+// RESULT: class java.util.ArrayList
+def smap = ['mehul', 10, 90.5]
+// RESULT: [mehul, 10, 90.5]
+smap.class
+// RESULT: class java.util.ArrayList
+def pointers = [5, 5, 10, 3, 4, 5, 6, 10, 1, 2]
+// RESULT: [5, 5, 10, 3, 4, 5, 6, 10, 1, 2]
+pointers
+// RESULT: [5, 5, 10, 3, 4, 5, 6, 10, 1, 2]
+pointers.getAt(0)
+// RESULT: 5
+pointers.getAt(-1)
+// RESULT: 2
+pointers.getAt(-2)
+// RESULT: 1
+pointers[0]
+// RESULT: 5
+pointers[-3]
+// RESULT: 10
+pointers[1] = 6
+// RESULT: 6
+pointers
+// RESULT: [5, 6, 10, 3, 4, 5, 6, 10, 1, 2]
+pointers.putAt(3, 2)
+// RESULT: null
+pointers
+// RESULT: [5, 6, 10, 2, 4, 5, 6, 10, 1, 2]
+pointers.size()
+// RESULT: 10
+pointers.reverse()
+// RESULT: [2, 1, 10, 6, 5, 4, 2, 10, 6, 5]
+pointers
+// RESULT: [5, 6, 10, 2, 4, 5, 6, 10, 1, 2]
+def r = pointers.reverse()
+// RESULT: [2, 1, 10, 6, 5, 4, 2, 10, 6, 5]
+r
+// RESULT: [2, 1, 10, 6, 5, 4, 2, 10, 6, 5]
+pointers
+// RESULT: [5, 6, 10, 2, 4, 5, 6, 10, 1, 2]
+pointers.count(10)
+// RESULT: 2
+pointers.count(0)
+// RESULT: 0
+pointers.count(1)
+// RESULT: 1
+pointers.find(6)
+// ERROR: groovy.lang.MissingMethodException: No signature of method: java.util.ArrayList.find() is applicable for argument types: (Integer) values: [6]
+Possible solutions: find(), find(), find(groovy.lang.Closure), find(groovy.lang.Closure), min(), init()
+//    groovysh_evaluate.run(groovysh_evaluate:3)
+//    groovysh_evaluate$run.call(Unknown Source)
+//    groovysh_evaluate$run.call(Unknown Source)
+//    jdk.internal.reflect.GeneratedMethodAccessor77.invoke(Unknown Source)
+//    java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+//    jdk.internal.reflect.GeneratedMethodAccessor67.invoke(Unknown Source)
+//    java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+//    jdk.internal.reflect.GeneratedMethodAccessor66.invoke(Unknown Source)
+//    java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+//    java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+//    java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+//    java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+//    java_lang_Runnable$run.call(Unknown Source)
+//    java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+//    java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+//    java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+//    java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+//    java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+//    java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+pointers.max()
+// RESULT: 10
+pointers.min()
+// RESULT: 1
+pointers
+// RESULT: [5, 6, 10, 2, 4, 5, 6, 10, 1, 2]
+pointers.push(9)
+// RESULT: true
+pointers
+// RESULT: [9, 5, 6, 10, 2, 4, 5, 6, 10, 1, 2]
+pointers.push(0)
+// RESULT: true
+pointers
+// RESULT: [0, 9, 5, 6, 10, 2, 4, 5, 6, 10, 1, 2]
+pointers << 10
+// RESULT: [0, 9, 5, 6, 10, 2, 4, 5, 6, 10, 1, 2, 10]
+pointers
+// RESULT: [0, 9, 5, 6, 10, 2, 4, 5, 6, 10, 1, 2, 10]
+pointers.leftShift(5)
+// RESULT: [0, 9, 5, 6, 10, 2, 4, 5, 6, 10, 1, 2, 10, 5]
+pointers
+// RESULT: [0, 9, 5, 6, 10, 2, 4, 5, 6, 10, 1, 2, 10, 5]
+pointers << 3 << 1
+// RESULT: [0, 9, 5, 6, 10, 2, 4, 5, 6, 10, 1, 2, 10, 5, 3, 1]
+pointers >> 9
+// ERROR: groovy.lang.MissingMethodException: No signature of method: java.util.ArrayList.rightShift() is applicable for argument types: (Integer) values: [9]
+Possible solutions: leftShift(java.lang.Object), leftShift(java.lang.Object)
+//    groovysh_evaluate.run(groovysh_evaluate:3)
+//    groovysh_evaluate$run.call(Unknown Source)
+//    groovysh_evaluate$run.call(Unknown Source)
+//    jdk.internal.reflect.GeneratedMethodAccessor77.invoke(Unknown Source)
+//    java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+//    jdk.internal.reflect.GeneratedMethodAccessor67.invoke(Unknown Source)
+//    java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+//    jdk.internal.reflect.GeneratedMethodAccessor66.invoke(Unknown Source)
+//    java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+//    java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+//    java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+//    java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+//    java_lang_Runnable$run.call(Unknown Source)
+//    java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+//    java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+//    java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+//    java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+//    java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+//    java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+pointers.add(4, 4)
+// RESULT: null
+pointers
+// RESULT: [0, 9, 5, 6, 4, 10, 2, 4, 5, 6, 10, 1, 2, 10, 5, 3, 1]
+pointers.add(3, 8)
+// RESULT: null
+pointers
+// RESULT: [0, 9, 5, 8, 6, 4, 10, 2, 4, 5, 6, 10, 1, 2, 10, 5, 3, 1]
+pointers.pop()
+// RESULT: 0
+pointers.pop()
+// RESULT: 9
+pointers.pop()
+// RESULT: 5
+pointers
+// RESULT: [8, 6, 4, 10, 2, 4, 5, 6, 10, 1, 2, 10, 5, 3, 1]
+pointers.removeLast()
+// RESULT: 1
+pointers
+// RESULT: [8, 6, 4, 10, 2, 4, 5, 6, 10, 1, 2, 10, 5, 3]
+pointers.removeLast()
+// RESULT: 3
+pointers.removeLast()
+// RESULT: 5
+pointers.removeLast()
+// RESULT: 10
+pointers.removeLast()
+// RESULT: 2
+pointers
+// RESULT: [8, 6, 4, 10, 2, 4, 5, 6, 10, 1]
+pointers.removeAt(4)
+// RESULT: 2
+pointers
+// RESULT: [8, 6, 4, 10, 4, 5, 6, 10, 1]
+pointers.remove(10)
+// ERROR: java.lang.IndexOutOfBoundsException: Index 10 out-of-bounds for length 9
+//    java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
+//    java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
+//    java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:248)
+//    java_util_List$remove$8.call(Unknown Source)
+//    groovysh_evaluate.run(groovysh_evaluate:3)
+//    groovysh_evaluate$run.call(Unknown Source)
+//    groovysh_evaluate$run.call(Unknown Source)
+//    jdk.internal.reflect.GeneratedMethodAccessor77.invoke(Unknown Source)
+//    java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+//    jdk.internal.reflect.GeneratedMethodAccessor67.invoke(Unknown Source)
+//    java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+//    jdk.internal.reflect.GeneratedMethodAccessor66.invoke(Unknown Source)
+//    java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+//    java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+//    java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+//    java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+//    java_lang_Runnable$run.call(Unknown Source)
+//    java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+//    java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+//    java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+//    java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+//    java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+//    java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+pointers.removeElement(10)
+// RESULT: true
+pointers
+// RESULT: [8, 6, 4, 4, 5, 6, 10, 1]
+pointers.removeAll(4)
+// RESULT: true
+pointers
+// RESULT: [8, 6, 5, 6, 10, 1]
+:record stop
+// CLOSED: Sun May 12 19:32:34 IST 2019

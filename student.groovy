@@ -12,13 +12,25 @@
 // class (give a data type to all objects created from a class) - blueprint for an object
 
 // Person X
+// an object of the class 'java.lang.Class' is created for the Student class
 class Student {
+  // by convention the name of the file and the name of the class must be the same (case sensitive)
+  // one file can have more than one class
+  // it is advised to have one class per file
+
   // object properties (attributes)
   // as a convention, while declaring attributes in a class, consider using static typing
+  // instance variables (properties of an object)
+  // default value of all instance variables is null
+  // null -> reference variable without any address that it is storing a reference of
   String name
   Character gender
   Integer roll
   Float marks
+
+  // class properties
+  static Integer count = 0 // it will be stored in the Class object of Student
+  // shared by all the objects of Student
 
 
   // constructors
@@ -33,7 +45,8 @@ class Student {
 
   // constructor overloading
   Student() {
-
+    // this.count++ // this works, but is confusing
+    Student.count++ // ideal way. Access (get/set) using class name
   }
 
   // parameterized constructor
@@ -41,9 +54,15 @@ class Student {
   Student(String name, Character gender, Integer roll, Float marks) {
     // initializing the properties of an object
     this.name = name
-    this.gender = gender
+
+    // from within the class, the property access does not automatically
+    // go through the setter and getter functions (the way it does from outside the class)
+    this.setGender(gender)
+
     this.roll = roll
     this.marks = marks
+
+    Student.count++
   }
 
   def getDetails() {
@@ -61,6 +80,7 @@ class Student {
   }
   */
 
+  // instance function
   def getGrade() {
     switch (this.marks) {
       // range data can be used in case, since it supports casing
@@ -76,55 +96,26 @@ class Student {
       default: 'I'
     }
   }
+
+  // static function
+  static def getMandatoryAttendance() {
+    // there is no "this"
+    // in a static function u will never access the attributes of an object (u can't)
+    70.0
+  }
+
+  // automatically getter/setter functions for each of the properties (instance/static) declared in the class,
+  // are created
+  // GroovyBean
+
+  // for custom setter and getter logic
+  // encapsulation
+  // on demand encapsulation
+  def setGender(gender) {
+    if (gender == 'm' || gender == 'f') {
+      this.gender = gender
+    } else {
+      this.gender = null
+    }
+  }
 }
-
-
-// Person Y
-// def s1 = new Student() // 40001 in ram
-def s1 = new Student('mehul', 'm' as Character, 10, 90)
-// internally
-// 1. new -> 40001
-// 2. Student('mehul', 'm', 10, 90, 40001)
-// s1 -> 40001
-def s2 = new Student() // 40006 in ram
-// internally
-// 1. new -> allocate some memory area in the ram -> 40006
-// 2. Student(40006)
-// s2 -> 40006
-
-// s1 and s2 are reference variables (address)
-
-// println s1
-// println s2
-
-// setting the properties on the individual objects
-/* s1.name = 'mehul'
-s1.gender = 'm'
-s1.roll = 10
-s1.marks = 90 */
-
-s2.name = 'jane'
-s2.gender = 'f'
-s2.roll = 45
-s2.marks = 67
-
-// getting the properties of the individual objects
-/* println s1.name
-println s2.name
-println s1.gender
-println s2.gender */
-
-
-def d2 = s2.getDetails()
-// internally
-// def d2 = Student.getDetails(s2)
-
-def d1 = s1.getDetails()
-// internally
-// def d1 = Student.getDetails(s1)
-
-println d1
-println d2
-
-println s1.getGrade() // Student.getGrade(s1)
-println s2.getGrade() // Student.getGrade(s2)
