@@ -1,0 +1,35 @@
+// OPENED: Tue May 14 07:00:13 IST 2019
+// RESULT: /var/folders/w3/q6tg9hdn019d3pzd0p1j1j41hfwv9x/T/groovysh-1763410415554070602.txt
+def nos = [5, 6, 3, 4, 2, 2, 10, 1, 9]
+// RESULT: [5, 6, 3, 4, 2, 2, 10, 1, 9]
+nos.any { it > 5 }
+// RESULT: true
+nos.any { it == 0 }
+// RESULT: false
+nos.every { it > 0 }
+// RESULT: true
+nos.every { it == 10 }
+// RESULT: false
+nos.class
+// RESULT: class java.util.ArrayList
+def m = [:]
+// RESULT: [:]
+m.class
+// RESULT: null
+m.getClass()
+// RESULT: class java.util.LinkedHashMap
+def smap = [10:'mehul', 45:'jane', 23: 'jill']
+// RESULT: [10:mehul, 45:jane, 23:jill]
+smap[45] = 'Jane'
+// RESULT: Jane
+smap
+// RESULT: [10:mehul, 45:Jane, 23:jill]
+smap[67] = 'rahul'
+// RESULT: rahul
+smap
+// RESULT: [10:mehul, 45:Jane, 23:jill, 67:rahul]
+smap[67]
+// RESULT: rahul
+smap[100]
+// RESULT: null
+// CLOSED: Tue May 14 07:32:27 IST 2019
