@@ -1,7 +1,9 @@
-println Student.count // getting the value of a static variable
+// println Student.count // getting the value of a static variable
 // Person Y
 // def s1 = new Student() // 40001 in ram
-def s1 = new Student('mehul', 'm' as Character, 10, 90)
+def a1 = new Address('city': 'Mumbai', 'country': 'India', 'state': 'MH') // calling the map base constructor available in every groovy bean
+// def s1 = new Student('mehul', 'm' as Character, 10, 90, a1) // positional arguments
+def s1 = new Student(name: 'mehul', gender: 'm' as Character, roll: 10, marks: 90, address: a1)
 // internally
 // 1. new -> 40001
 // 2. Student('mehul', 'm', 10, 90, 40001)
@@ -12,7 +14,7 @@ def s2 = new Student() // 40006 in ram
 // 2. Student(40006)
 // s2 -> 40006
 
-println Student.count
+// println Student.count
 
 // s1 and s2 are reference variables (address)
 
@@ -33,7 +35,7 @@ s2.gender = 'p'
 s2.roll = 45
 s2.marks = 67
 
-println s2.gender
+// println s2.gender
 // internally s2.getGender()
 
 // getting the properties of the individual objects
@@ -54,10 +56,10 @@ def d1 = s1.getDetails()
 println d1
 println d2
 
-println s1.getGrade() // Student.getGrade(s1)
-println s2.getGrade() // Student.getGrade(s2)
+// println s1.getGrade() // Student.getGrade(s1)
+// println s2.getGrade() // Student.getGrade(s2)
 
-println Student.count
+// println Student.count
 
-println Student.getMandatoryAttendance() // static function (internally Student.getMandatoryAttendance())
+// println Student.getMandatoryAttendance() // static function (internally Student.getMandatoryAttendance())
 // in order to call them, no object needs to be created

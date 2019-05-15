@@ -28,6 +28,9 @@ class Student {
   Integer roll
   Float marks
 
+  //compositon association
+  Address address
+
   // class properties
   static Integer count = 0 // it will be stored in the Class object of Student
   // shared by all the objects of Student
@@ -51,7 +54,7 @@ class Student {
 
   // parameterized constructor
   // you declare a constructor, u do not get the default constructor
-  Student(String name, Character gender, Integer roll, Float marks) {
+  Student(String name, Character gender, Integer roll, Float marks, Address address = null) {
     // initializing the properties of an object
     this.name = name
 
@@ -61,16 +64,24 @@ class Student {
 
     this.roll = roll
     this.marks = marks
+    this.address = address
 
     Student.count++
   }
 
   def getDetails() {
     // println this // reference of the current object for which the function is called
-    "Name: ${this.name}\nGender: ${this.gender}\nRoll: ${this.roll}\nMarks: ${this.marks}"
-
+    def part1 = "Name: ${this.name}\nGender: ${this.gender}\nRoll: ${this.roll}\nMarks: ${this.marks}"
     // "Name: ${name}\nGender: ${gender}\nRoll: ${roll}\nMarks: ${marks}" -> will also work
     // as the lower level code will put this before every attribute name
+    /* def part2 = ''
+    if (this.address) {
+      part2 = '\n' + this.address.getDetails()
+    } */
+
+    def part2 = '\n' + (this.address?.getDetails() ?: 'NA') // ?. safe navigation operator
+
+    part1 + part2
   }
 
   // internally
