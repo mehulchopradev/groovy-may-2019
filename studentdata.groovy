@@ -1,7 +1,17 @@
+import com.example.college.domain.common.Address as Addr // aliasing
+// aliasing useful to solve namespace conflicts
+
+import com.example.college.domain.Student
+import static com.example.college.domain.Student.count
+// even static functions can be imported this way
+
 // println Student.count // getting the value of a static variable
+println count
 // Person Y
 // def s1 = new Student() // 40001 in ram
-def a1 = new Address('city': 'Mumbai', 'country': 'India', 'state': 'MH') // calling the map base constructor available in every groovy bean
+def a1 = new Addr('city': 'Mumbai', 'country': 'India', 'state': 'MH') // calling the map base constructor available in every groovy bean
+// onced aliased, new Address is not going to work
+
 // def s1 = new Student('mehul', 'm' as Character, 10, 90, a1) // positional arguments
 def s1 = new Student(name: 'mehul', gender: 'm' as Character, roll: 10, marks: 90, address: a1)
 // internally
@@ -60,6 +70,7 @@ println d2
 // println s2.getGrade() // Student.getGrade(s2)
 
 // println Student.count
+println count
 
 // println Student.getMandatoryAttendance() // static function (internally Student.getMandatoryAttendance())
 // in order to call them, no object needs to be created

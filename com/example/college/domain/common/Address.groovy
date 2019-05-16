@@ -1,3 +1,5 @@
+package com.example.college.domain.common
+
 class Address {
   String country
   String state

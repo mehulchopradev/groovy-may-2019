@@ -1,3 +1,10 @@
+package com.example.college.domain
+
+import com.example.college.domain.common.Address
+
+// google.com
+// com -> google -> application specific
+
 // OOP
 // 1. visualize real world actors as something that occupies memory in the ram
 // Objects
@@ -13,7 +20,8 @@
 
 // Person X
 // an object of the class 'java.lang.Class' is created for the Student class
-class Student {
+// sub class / child class / concrete class
+class Student extends CollegeUser {
   // by convention the name of the file and the name of the class must be the same (case sensitive)
   // one file can have more than one class
   // it is advised to have one class per file
@@ -23,8 +31,8 @@ class Student {
   // instance variables (properties of an object)
   // default value of all instance variables is null
   // null -> reference variable without any address that it is storing a reference of
-  String name
-  Character gender
+  // String name
+  // Character gender
   Integer roll
   Float marks
 
