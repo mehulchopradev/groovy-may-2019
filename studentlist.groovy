@@ -1,3 +1,5 @@
+import com.example.college.domain.CollegeStudent
+
 /* def students = [new Student('mehul', 'm' as Character, 10, 90),
   new Student('jane', 'f' as Character, 3, 67),
   new Student('jill', 'f' as Character, 23, 80)]
@@ -12,7 +14,7 @@ if (foundStudent) {
   println "Not found"
 } */
 
-def smap = [
+/* def smap = [
   10: new Student('mehul', 'm' as Character, 10, 90),
   3: new Student('jane', 'f' as Character, 3, 67),
   23: new Student('jill', 'f' as Character, 23, 80)
@@ -24,4 +26,7 @@ if (foundStudent) {
   println foundStudent.name
 } else {
   println "Not found"
-}
+} */
+
+def s = new CollegeStudent(name: 'mehul', gender: 'm' as Character, roll: 10, marks: 90)
+s.printType()

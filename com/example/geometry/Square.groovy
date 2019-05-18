@@ -1,6 +1,8 @@
 package com.example.geometry
 
-class Square extends Shape {
+import com.example.util.DataType
+
+class Square extends Shape implements DataType {
   Float side
 
   def area() {

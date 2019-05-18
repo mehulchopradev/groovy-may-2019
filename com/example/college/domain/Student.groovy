@@ -1,6 +1,7 @@
 package com.example.college.domain
 
 import com.example.college.domain.common.Address
+import com.example.util.DataType
 
 // google.com
 // com -> google -> application specific
@@ -21,7 +22,7 @@ import com.example.college.domain.common.Address
 // Person X
 // an object of the class 'java.lang.Class' is created for the Student class
 // sub class / child class / concrete class
-class Student extends CollegeUser {
+class Student extends CollegeUser implements DataType {
   // by convention the name of the file and the name of the class must be the same (case sensitive)
   // one file can have more than one class
   // it is advised to have one class per file

@@ -63,14 +63,17 @@ def d1 = s1.getDetails()
 // internally
 // def d1 = Student.getDetails(s1)
 
-println d1
-println d2
+// println d1
+// println d2
 
 // println s1.getGrade() // Student.getGrade(s1)
 // println s2.getGrade() // Student.getGrade(s2)
 
 // println Student.count
-println count
+// println count
 
 // println Student.getMandatoryAttendance() // static function (internally Student.getMandatoryAttendance())
 // in order to call them, no object needs to be created
+
+s1.printType()
+s2.printType()
