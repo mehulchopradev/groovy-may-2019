@@ -1,0 +1,12 @@
+[
+  {
+    "title": "Book 1",
+    "price": 900,
+    "pages": 450
+  },
+  {
+    "title": "Book 2",
+    "price": 400,
+    "pages": 600
+  }
+]

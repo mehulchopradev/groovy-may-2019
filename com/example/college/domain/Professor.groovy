@@ -8,4 +8,8 @@ final class Professor extends CollegeUser {
   String toString() {
     this.getDetails()
   }
+
+  def leftShift(subject) {
+    this.subjects << subject
+  }
 }

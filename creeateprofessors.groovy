@@ -1,9 +1,13 @@
 import com.example.college.domain.Professor
 import com.example.college.domain.CollegeStudent
 
-def p1 = new Professor(name: 'mehul', gender: 'm', subjects: ['Phyics', 'Maths'])
+def p1 = new Professor(name: 'mehul', gender: 'm', subjects: ['Physics'])
 // println p1.getDetails() // Professor.getDetails(p1)
 println p1 // println(p1.toString())
+
+p1 << 'Maths' << 'Chemistry' // p1.leftShift('Maths') Operator overloading
+
+println p1.subjects
 
 def name = 'Mehul chopra'
 println name // println(name.toString())
